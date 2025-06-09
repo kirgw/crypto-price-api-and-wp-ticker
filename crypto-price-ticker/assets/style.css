@@ -1,0 +1,39 @@
+.crypto-ticker-wrapper {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: #f9f9f9;
+  font-family: "Noto Sans", "Roboto", "Helvetica Neue", sans-serif;
+  min-width: 200px;
+  text-align: center;
+}
+
+.crypto-ticker-wrapper h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding: 2px 0 10px 0;
+}
+
+.crypto-ticker-price {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0073aa;
+}
+
+.crypto-ticker-price span {
+  font-weight: normal;
+  color: #555;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.crypto-ticker-status {
+  font-size: 0.8em;
+  color: #999;
+  margin: 10px 0 0;
+  height: 1.2em;
+}
