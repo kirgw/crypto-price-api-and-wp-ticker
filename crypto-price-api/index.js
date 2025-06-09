@@ -2,11 +2,13 @@ const express = require('express');
 const axios = require('axios');
 const NodeCache = require('node-cache');
 require('dotenv').config(); // .env file
+const cors = require('cors');
 
 // Init server and cache
 const app = express();
 const port = process.env.PORT || 3000; // use .env port or 3000 by default
 const cache = new NodeCache({ stdTTL: 60 }); // 1 minute default cache
+app.use(cors());
 
 // CoinGecko API setup
 const COINGECKO_API_URL =  process.env.COINGECKO_API_URL;
