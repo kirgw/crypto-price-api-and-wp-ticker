@@ -67,6 +67,7 @@ define('CPT_CRYPTO_COIN_ID', 'bitcoin'); // Change 'bitcoin' to the desired coin
 ```
 
 4. The ticker is displayed in the theme's footer by default (using the `wp_footer` hook). It can also be displayed anywhere using the `[crypto_price_ticker]` shortcode.
+5. The ticker automatically updates the price every 60 seconds. A "Update" button is also available for a manual price refresh.
 
 ### Examples
 
