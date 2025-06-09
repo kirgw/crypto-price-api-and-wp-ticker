@@ -75,18 +75,19 @@ app.get('/price/:id', async (req, res) => {
 
     // Error handling
     catch (error) {
-        console.error('Error fetching data:', error.message);
 
-        // Has response?
         if (error.response) {
-            if (error.response.status === 404) {
-                // Checking just for not found
+
+            // Log error details
+            console.error('Error fetching data:', error.response.status, error.response.data);
+
+            if (error.response.status === 404) { // Return "not found"
                 return res.status(404).json({ error: `Crypto id '${id}' not found.` });
             }
         }
 
-        // Others
-        return res.status(500).json({ error: 'Failed to fetch data from the provider.' });
+        // Other errors: return code and status
+        return res.status(500).json({ error: `Failed to fetch data: ${error.code} (${error.status}).` });
     }
 });
 
