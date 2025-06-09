@@ -59,11 +59,11 @@ The plugin provides a simple ticker display. To use it:
 
 1. Ensure the Cryptocurrency Price API is running (see Part 1).
 2. Edit the `crypto-price-ticker.php` file in the plugin directory.
-3. The plugin displays Bitcoin price by default. To display a different cryptocurrency, locate the constant `CRYPTO_COIN_ID` and change its value to the ID of the cryptocurrency you want to display (e.g., `ethereum`):
+3. The plugin displays Bitcoin price by default. To display a different cryptocurrency, locate the constant `CPT_CRYPTO_COIN_ID` and change its value to the ID of the cryptocurrency you want to display (e.g., `ethereum`):
 
 ```php
 // In crypto-price-ticker.php
-define( 'CRYPTO_COIN_ID', 'bitcoin' ); // Change 'bitcoin' to the desired coin ID
+define('CPT_CRYPTO_COIN_ID', 'bitcoin'); // Change 'bitcoin' to the desired coin ID
 ```
 
 4. The ticker is displayed in the theme's footer by default (using the `wp_footer` hook). It can also be displayed anywhere using the `[crypto_price_ticker]` shortcode.
