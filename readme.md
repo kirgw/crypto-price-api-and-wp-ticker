@@ -74,6 +74,8 @@ Here are examples of the ticker displaying prices for Bitcoin and Ethereum:
 
 ![Bitcoin Price Ticker](coinapi_btc.png)
 ![Ethereum Price Ticker](coinapi_eth.png)
+
+And also an example how errors are handled within ticker:
 ![Arbitrum: Error display example](coinapi_arb.png)
 
 ## Part 3: GitHub Repository
